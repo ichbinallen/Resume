@@ -1,0 +1,260 @@
+\documentclass[10pt]{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[utf8]{inputenc}
+%\usepackage{extsizes}
+\usepackage[left=1.5cm,top=1.0cm,right=1.5cm,bottom=1.0cm,]{geometry}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{scrextend}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor,soul}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newenvironment{am}{\begin{addmargin}[1em]{0em}}{\end{addmargin}}
+\newcommand{\Experience}[3]{\begin{am}\textbf{#1} \ \ \ \ \emph{{\color{LightGray}{#2}}} \hfill {#3} \end{am}}
+\newcommand{\Contact}[4] { \underline{ \makebox[18cm][c]{ {#1} $\bullet$ {#2} $\bullet$ {#3} $\bullet$ {#4} } } }
+\newcommand{\CPP}{C\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+\thispagestyle{empty}
+\definecolor{ProcessBlue}{RGB}{27,27,85}
+\definecolor{LightGray}{gray}{0.1}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% White Space Squeezing Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\linespread{0.90}
+% \setlength{\parskip}{0pt}
+% \setlength{\parsep}{0pt}
+% \setlength{\headsep}{0pt}
+% \setlength{\topskip}{0pt}
+% \setlength{\topmargin}{0pt}
+% \setlength{\topsep}{0pt}
+% \setlength{\partopsep}{0pt}
+% \usepackage[compact]{titlesec}
+% \titlespacing{\section}{0pt}{*0}{*0}
+% \titlespacing{\subsection}{0pt}{*0}{*0}
+% \titlespacing{\subsubsection}{8pt}{*0}{*0}
+
+
+% opening
+\title{}
+\author{}
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resume Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+ \huge \textbf{Allen J Clark}
+\end{center}
+
+
+\Contact{1178 Gibbs Avenue S1, St. Paul MN, 55108}{651-367-9756}{clark815@umn.edu}{
+\href{https://www.linkedin.com/in/allenjclark}{\color{blue} \myul[blue] {Linked In}}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{Objective} \emph{{\color{LightGray}To bring computational problem solving skills to a statistics, applied math or computing position for summer 2013.}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%\vspace{-.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{am}
+ \textbf{Master of Science in Statistics}
+ \hfill Anticipated June 2017 \\
+ \emph{{\color{LightGray}University of Minnesota - Twin Cities}}		 	\hfill Minneapolis, MN  \\
+\emph{{\color{LightGray}School of Statistics}}                                          \hfill \\
+\end{am}
+
+\begin{am}
+ \textbf{Bachelor of Arts in Mathematics} 					        \hfill May 2012  \\
+ \emph{{\color{LightGray}Bethel University}}					        \hfill Saint Paul, MN  \\
+\emph{{\color{LightGray}College of Arts and Sciences}}			                \hfill \\
+\end{am}
+
+
+
+%\vspace{-.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{am}
+\begin{tabular}{l l}
+  \textbf{Languages:}			& Python, C++, Unix Bash \\
+  \textbf{Programs:} 			& MS Office, Lindo, WinBugs \LaTeX \\
+  \textbf{Data Analysis:}		& R, Python, SQL, JMP, Excel, SAS \\
+  \textbf{Web:}                         & HTML 5, CSS, R Shiny
+%  \textbf{Manufacturing Quality:}	& 6$\sigma$ DMAIC, 8D, Design of Experiments \\
+%  \textbf{Lab Experience:} 		& 4 Semesters lab experience  \\
+\end{tabular}
+\end{am}
+
+
+\section*{Graduate Course Work}
+\begin{itemize}[noitemsep]
+  \item \textbf{Statistics Theory:} Probability and Statistics (PhD level),
+    Decision Theory, Asymptotics
+  \item \textbf{Applied Statistics:} Applied Regression Analysis, Design of
+    Experiments, Finite Population Sampling, Bayesian Analysis, Survival
+    Analysis, Machine Learning and Data Mining, Advanced Statistical Methods
+  \item \textbf{Computer Science:} Algorithms and Data Structures, Database Management
+    Systems, Artificial Intelligence
+\end{itemize}
+
+\section*{Research Experience}
+\Experience{Masters Thesis}{}{}
+\begin{itemize}[noitemsep]
+  \item Conducted research on Aster Models for Biological Life History Analysis
+  \item Used Metropolis MCMC sampling to find estimates of random effects
+  \item Integrated C functions into an R package for optimized computational
+    performance
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Internship Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Experience{Actuarial \& Analytics Intern}{Travelers Insurance}{June 2014 - August 2014}
+\begin{itemize}[noitemsep]
+ \item Built Generalized Linear Models (GLM) to improve auto insurance pricing
+%\item Gained Property \& Casualty insurance acumen: Pricing, Reserving, Claim Handling, Underwriting, etc
+\item Invested effort in data preparation and exploratory data analysis via SQL and graphical tools
+\item Programmed GLM models in SAS and executed scripts in Unix Bash
+%\item Learned zero-weighted distributions: Tweedie, Zero-weighted Poisson
+\item Employed model selection techniques for high dimensional data including
+  AIC, BIC, CV, and regularization methods
+\item Viualized model comparison methods such as ROC, Gini index and others via
+  \texttt{ggplot}
+\item Presented model conclusions to an audience of 200
+\end{itemize}
+
+
+\Experience{Quality Control Intern}{Seagate Technology}{May 2013 - August 2013}
+\begin{itemize}[noitemsep]
+% \item Trained in 8D problem solving process
+ \item Established technical writing skills via JMP documentation and process workflow documents
+% \item Something Something Visual Basic Excel Notebooks
+ \item Analyzed survey data and presented results to management
+ \item Improved 8D and 6$\sigma$ Define, Measure, Analyze, Improve, Control training materials
+ \item Produced automated reports and graphics via business objects relational database
+ \item Developed JMP scripting language add-in program
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Experience{Teaching Assistant}{University of Minnesota}{September 2014 - May
+2015}
+\begin{itemize}[noitemsep]
+  \item TA'd for intro stats (3011), MS level probability theory
+    (5101) and MS level
+    statistics theory (5102)
+  \item Led weekly lab sections, held office hours and graded coursework
+  \item TA'd for over 100 MS level students and 100 undergrad students
+\end{itemize}
+
+\Experience{Help Desk Team Lead}{Bethel University ITS}{March 2011 - May 2012}
+\begin{itemize}[noitemsep]
+ \item Provided phone, walk up and email support for technology issues
+ \item Displayed problem solving by independently researching and documenting solutions
+ \item Exhibited customer service skills through patience and cheerful attitude
+ \item Took initiative on unclaimed tasks by updating internal ITS website
+ \item Communicated with other ITS teams through detailed, concise and organized writing
+ \item Managed a four person team by delegating tasks and following up to resolve front line issues
+\end{itemize}
+
+
+%\Experience{Package Handler}{Fedex Ground}{June 2012 - September 2012}
+%\begin{itemize}[noitemsep]
+%  \item Loaded and unloaded packages into trailers
+%  \item Maintained personal and equipment safety vigilance
+%  \item Loaded an average of 450 packages per hour
+%\end{itemize}
+
+
+%\Experience{Teaching Assistant}{Bethel University Mathematics}{September 2011 - May 2012}
+%\begin{itemize}[noitemsep]
+% \item Completed work on deadline without direct supervision
+% \item Payed attention to detail by writing helpful comments to individual students
+% \item Communicated with professor regularly about grading progress and common homework mistakes
+%\end{itemize}
+
+
+%\Experience{Summer Research Assistant}{Bethel University Mathematics}{June 2011 - August 2011}
+%\begin{itemize}[noitemsep]
+% \item Worked with a professor to produce a statistics textbook
+% \item Created plots, graphics, homework exercises, and simulations
+%\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Volunteer Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Experience{Operations Research Data Team Manager}{Bethel University Mathematics}{October - December 2011}
+\begin{itemize}[noitemsep]
+ \item Completed a project to increase food production for Feed My Starving Children
+ \item Collected and organized data for a statistical simulation
+ \item Showed leadership by managing a team of nine students and cooperating with four other teams
+ \item Analyzed simulation output via confidence intervals and hypothesis tests
+ \item Recommended best performing model to FMSC in an oral presentation and in a written report
+\end{itemize}
+
+
+
+
+%\vspace{-.3cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{-.3cm}
+
+\begin{itemize}[noitemsep]
+ \item Meritorious Winner  \ \ \ \  \emph{\color{LightGray}{UMN Mathematical Contest in Modeling}} \hfill October 2012
+ \item Eagle Scout Award  \ \ \ \  \emph{\color{LightGray}{Boy Scouts of America}} \hfill March 2010
+\end{itemize}
+
+
+\end{document}
